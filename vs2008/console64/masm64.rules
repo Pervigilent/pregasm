@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="assemble"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="assemble"
+			DisplayName="MASM64"
+			CommandLine="ml64 /c /Zi /Fl [inputs]"
+			Outputs="$(InputName).obj"
+			FileExtensions="*.asm"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>
