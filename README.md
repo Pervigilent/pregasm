@@ -10,5 +10,16 @@ I have the following objectives for this repository
 - Translation of Detmer's source for GNU assembler
 - Implementation of inline assembly
 - Implementation of parallel algorithms using inline assembly and OpenMP
+- Use of CMake for building projects
+- Implementation of numerical methods
+
+## Running
+
+```
+as --32 fig_03_01_gas.s -o fig_03_01_gas.o
+ld -m elf_i386 fig_03_01_gas.o -o fig_03_01_gas
+./fig_03_01_gas
+```
+
 
 

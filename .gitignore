@@ -1,0 +1,14 @@
+# Object files
+*.o
+
+# Executables, debug files, and listings
+*.map
+*.lst
+*.out
+*.dwo # DWARF debugging related auxiliary files
+
+# Editor/OS specific temporary files
+*~
+.DS_Store
+*.swp
+
