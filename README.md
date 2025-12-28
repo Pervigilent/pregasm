@@ -14,7 +14,14 @@ I have the following objectives for this repository
 - Implementation of numerical methods
 
 ## Running
+The GNU assembler can be tested for and installed with the following commands.
+```
+as --version
+sudo apt update
+sudo apt install binutils
+```
 
+To build the first example, run the following commands in bash which assembles and then links the code.
 ```
 as --32 fig_03_01_gas.s -o fig_03_01_gas.o
 ld -m elf_i386 fig_03_01_gas.o -o fig_03_01_gas
