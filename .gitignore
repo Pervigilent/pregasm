@@ -12,3 +12,23 @@
 .DS_Store
 *.swp
 
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_CPack_Packages/
+DartConfiguration.tcl
+Testing/
+.cmake/
+
+# Build directory (commonly named 'build' or 'out')
+# If you use an out-of-source build, ignore your build directory name.
+build/
+out/
+bin/
+lib/
+# if you want to ignore all CMake related files in any directory
+# CMakeLists.txt.user
