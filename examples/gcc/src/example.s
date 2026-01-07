@@ -49,9 +49,9 @@ main:
     movl  number1, %eax
     addl  number2, %eax
 
-    # dtoa(sum, eax)
-    pushl %eax
+    # dtoaproc(source, dest)
     pushl $sum
+    pushl %eax
     call  dtoaproc
     addl  $8, %esp
 

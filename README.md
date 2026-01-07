@@ -28,5 +28,25 @@ ld -m elf_i386 fig_03_01_gas.o -o fig_03_01_gas
 ./fig_03_01_gas
 ```
 
+## GCC Project
+The Visual Studio project was translated for use in Linux as a CMake build using gcc in the 'gcc' folder. gas, gcc, and cmake were installed with
+```
+sudo apt update
+sudo apt install build-essential
+sudo apt install gcc-multilib
+sudo apt install cmake
+```
+
+To build the project, we use the following commands
+```
+mkdir build
+cd build/
+cmake ..
+make
+./fig_03_11 
+```
+
+
+
 
 
