@@ -13,7 +13,10 @@ I have the following objectives for this repository
 - Use of CMake for building projects
 - Implementation of numerical methods
 
-## Running
+## GAS Projects
+The following gas examples are available:
+\[TODO: Complete list of gas examples\]
+
 The GNU assembler can be tested for and installed with the following commands.
 ```
 as --version
@@ -28,8 +31,14 @@ ld -m elf_i386 fig_03_01_gas.o -o fig_03_01_gas
 ./fig_03_01_gas
 ```
 
-## GCC Project
-The Visual Studio project was translated for use in Linux as a CMake build using gcc in the 'gcc' folder. gas, gcc, and cmake were installed with
+## GCC Projects
+The following gcc examples are available
+- fig_03_11
+    - Adds two numbers
+- fig_04_18
+    - Computes area of rectangle
+
+The 32-bit Visual Studio project corresponds to fig_03_11 and was translated for use in Linux as a CMake build using gcc in the 'gcc/fig_03_11' folder. gas, gcc, and cmake were installed with
 ```
 sudo apt update
 sudo apt install build-essential
