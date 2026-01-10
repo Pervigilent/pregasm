@@ -31,7 +31,7 @@ main:
     call  getInput
     addl  $12, %esp
 
-    # atod(string) → eax
+    # atod(string) --> eax
     pushl $string
     call  atodproc
     addl  $4, %esp
@@ -44,7 +44,7 @@ main:
     call  getInput
     addl  $12, %esp
 
-    # atod(string) → eax
+    # atod(string) --> eax
     pushl $string
     call  atodproc
     addl  $4, %esp
