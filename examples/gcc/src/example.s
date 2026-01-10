@@ -7,7 +7,7 @@ prompt2:    .asciz "Enter second number: "
 
 string:     .space 40
 
-resultLbl:  .asciz "The sum is"
+resultLbl:  .asciz "The sum is "
 sum:        .space 12
 
 .section .text
