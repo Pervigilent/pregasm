@@ -1,5 +1,5 @@
     .extern getInput
-    .extern showOutput
+    .extern showLabeledOutput
     .extern atodproc
     .extern dtoaproc
     .extern wtoaproc
@@ -48,7 +48,7 @@
     pushl %eax
     leal  \outLbl, %eax
     pushl %eax
-    call  showOutput
+    call  showLabeledOutput
     addl  $8, %esp
     popal
 .endm

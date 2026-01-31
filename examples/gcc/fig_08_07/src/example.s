@@ -25,6 +25,7 @@ position:   .space 11
 
 .extern getInput
 .extern showOutput
+.extern showLabeledOutput
 .extern dtoaproc
 
 # ---------------------------------------------
@@ -86,7 +87,7 @@ whilePosn:
 endWhilePosn:
     pushl $failure
     pushl $resultLbl
-    call  showOutput
+    call  showLabeledOutput
     addl  $8, %esp
     jmp   quit
 
@@ -98,13 +99,17 @@ found:
 
     pushl $success
     pushl $resultLbl
+    call  showLabeledOutput
+    addl  $8, %esp
+    
+    pushl $position
     call  showOutput
     addl  $8, %esp
 
 quit:
     xorl  %eax, %eax
     ret
-
+    
 # ---------------------------------------------
 # strlen(char *str)
 # ---------------------------------------------

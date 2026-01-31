@@ -32,11 +32,11 @@ void getInput(const char *inputPrompt, char *result, int maxChars) {
 }
 
 /*
- * showOutput
+ * showLabeledOutput
  * -----------
  * Displays a labeled output block.
  */
-void showOutput(const char *outputLabel, const char *outputString) {
+void showLabeledOutput(const char *outputLabel, const char *outputString) {
 	const char* p = outputString;
 
 	if (outputLabel && *outputLabel) {
@@ -51,10 +51,30 @@ void showOutput(const char *outputLabel, const char *outputString) {
 		printf("%s", p);
 	}
 	
-	if (outputLabel || outputString) {
-		printf("\n");
-	}
+	//if (outputLabel || outputString) {
+	//	printf("\n");
+	//}
 
 	fflush(stdout);
+}
+
+/*
+ * showOutput
+ * -----------------
+ * Displays an output string without a label.
+ * Leading whitespace is skipped.
+ */
+void showOutput(const char *outputString) {
+    const char *p = outputString;
+
+    if (outputString) {
+        while (*p && isspace((unsigned char)*p)) {
+            p++;
+        }
+        printf("%s", p);
+        printf("\n");
+    }
+
+    fflush(stdout);
 }
 

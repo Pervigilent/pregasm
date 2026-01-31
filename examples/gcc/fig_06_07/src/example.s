@@ -58,8 +58,8 @@ main:
     addl  $8, %esp
 
     # dtoa(result, eax)
+    pushl $result    
     pushl %eax
-    pushl $result
     call  dtoaproc
     addl  $8, %esp
 

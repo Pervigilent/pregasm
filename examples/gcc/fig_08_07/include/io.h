@@ -2,7 +2,8 @@
 #define IO_H
 
 void getInput(const char *prompt, char *buf, int maxlen);
-void showOutput(const char *label, const char *value);
+void showLabeledOutput(const char *label, const char *value);
+void showOutput(const char *value);
 
 #endif
 
