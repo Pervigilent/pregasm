@@ -2,8 +2,8 @@
 # GAS / gcc version
 
 .section .data
-prompt1:    .asciz "String to search?"
-prompt2:    .asciz "Key to search for?"
+prompt1:    .asciz "String to search?  "
+prompt2:    .asciz "Key to search for? "
 
 target:     .space 80
 key:        .space 80
@@ -12,9 +12,9 @@ trgtLength: .long 0
 keyLength:  .long 0
 lastPosn:   .long 0
 
-resultLbl:  .asciz "Search Results"
-failure:    .asciz "The key does not appear in the string"
-success:    .asciz "The key appears at position"
+resultLbl:  .asciz "Search Results\n"
+failure:    .asciz "The key does not appear in the string."
+success:    .asciz "The key appears at position "
 
 position:   .space 11
             .asciz "   in the string."
@@ -91,8 +91,8 @@ endWhilePosn:
     jmp   quit
 
 found:
-    pushl %eax
     pushl $position
+    pushl %eax
     call  dtoaproc
     addl  $8, %esp
 
