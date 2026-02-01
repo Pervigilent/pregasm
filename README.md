@@ -39,6 +39,8 @@ The following gcc examples are available
     - Computes area of rectangle
 - fig_08_07
     - Finds substring
+- fig_08_09
+    - Finds a character in a string
 
 The 32-bit Visual Studio project corresponds to fig_03_11 and was translated for use in Linux as a CMake build using gcc in the 'gcc/fig_03_11' folder. gas, gcc, and cmake were installed with
 ```
